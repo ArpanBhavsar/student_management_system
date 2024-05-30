@@ -1,0 +1,45 @@
+Topics:
+- REST API
+- Benefits of Using REST API
+- How to create REST API in Node.js and Express.js
+- Install Postman to test the API
+- Create CRUD operations for student management system
+
+
+REST API:
+REST - Representational State Transfer
+API - Application Programing Interface
+
+REST API is the conncetion between client and server. 
+It provides connection between your browser and server. It also connects the server with the Database.
+
+A REST API is an architectural style for desiging networked applications. It relies on client server HTTP protocol. 
+
+
+Use of REST API:
+REST APIs are used to create interactive dynamic web applications. 
+They enable different software applications to communicate with each other. (For example communication between web broser and web server, communication between web server and Database)
+Common uses of REST API:
+- Accessing web services
+- Connecting frontend and backend
+- Providing data to mobile or web applications
+
+
+Benefits of using REST APIs:
+- Scalability: It can be scaled easily beacuse the server and client are independent. 
+- Flexibility: They can handle multiple types of calls and return different data formats.
+- Interoperability: It can be used across various platforms and technologies. For example you can use the same API for creating Website and Mobile Apps 
+
+
+Student Management System MVC Folder Structure:
+student_management_system
+|-- models/
+|
+|- conrollers/
+|
+|- routes/
+|
+|- config/
+|
+|-app.js
+|-package.json

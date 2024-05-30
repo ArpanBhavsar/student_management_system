@@ -11,11 +11,21 @@ require('dotenv').config({path: "./config/.env"});
 //Import the connectDB function of database.js file to connect to the MongoDB Database
 const connectDB = require('./config/database');
 
+//Import the student routes
+const studentRoutes = require('./routes/studentRoutes');
+
 //Create the instance of express server
 const app = express();
 
 // Connect to the Database by calling the connectDB function
 connectDB();
+
+// Connect the Middleware bodyparser to handle the request body and params in json format
+app.use(bodyParser.json());
+
+
+//All the routes for node.js application 
+app.use('/api/students', studentRoutes);
 
 //Read the port number form the .env file
 const port = process.env.PORT || 3000;
